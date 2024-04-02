@@ -29,8 +29,8 @@ app.use(session(sessionOptions));
 
 mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 app.use(express.json());
-ModuleRoutes(app);
 CourseRoutes(app);
+ModuleRoutes(app);
 AssignmentRoutes(app);
 Hello(app)
 Lab5(app);
